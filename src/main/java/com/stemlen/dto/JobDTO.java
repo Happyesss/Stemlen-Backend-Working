@@ -27,6 +27,7 @@ public class JobDTO {
     private List<String> skillsRequired;
     private JobStatus jobStatus;
     private Long postedBy;
+    private String applyUrl;
     
     public Job toEntity() {
     	 return new Job(
@@ -43,7 +44,8 @@ public class JobDTO {
     	            this.description,
     	            this.skillsRequired,
     	            this.jobStatus,
-    	            this.postedBy
+    	            this.postedBy,
+    	            this.applyUrl
     	        );
 	}
 
